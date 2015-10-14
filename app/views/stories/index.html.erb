@@ -1,0 +1,8 @@
+<h1>StoryTime</h1>
+
+<ul style="list-style:none">
+  <% @stories.each do |story| %>
+    <li><h3><%= story.title %></h3></li>
+    <p><%= story.first_sentence %></p>
+  <% end %>
+</ul>
