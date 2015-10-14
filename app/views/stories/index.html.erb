@@ -2,7 +2,9 @@
 
 <ul style="list-style:none">
   <% @stories.each do |story| %>
-    <li><h3><%= story.title %></h3></li>
+    <li><h3><%= link_to "#{story.title}", story_path(story) %></h3></li>
     <p><%= story.first_sentence %></p>
   <% end %>
 </ul>
+
+<%= link_to 'Add a Story', new_story_path %>
