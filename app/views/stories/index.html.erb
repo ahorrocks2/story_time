@@ -1,10 +1,9 @@
 <h1>StoryTime</h1>
 
-<ul style="list-style:none">
-  <% @stories.each do |story| %>
-    <li><h3><%= link_to "#{story.title}", story_path(story) %></h3></li>
-    <p><%= story.first_sentence %></p>
-  <% end %>
-</ul>
+<% @stories.each do |story| %>
+  <h3><%= link_to "#{story.title}", story_path(story) %></h3>
+  <p><%= story.first_sentence %></p>
+<% end %>
 
-<%= link_to 'Add a Story', new_story_path %>
+
+<%= link_to 'Add a Story', new_story_path, class: "btn btn-primary"%>
