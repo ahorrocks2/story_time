@@ -1,2 +1,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+.container {
+  text-align: center;
+  .row {
+  margin-bottom: 2%;
+  }
+  img {
+    border-radius: 10px;
+  }
+}

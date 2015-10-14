@@ -5,6 +5,7 @@ class StoriesController < ApplicationController
 
   def show
     @story = Story.find(params[:id])
+    @sentences = @story.sentences
   end
 
   def new
@@ -13,7 +14,6 @@ class StoriesController < ApplicationController
   end
 
   def create
-    @image = Image.order("RANDOM()").first
     @story = Story.create(story_params)
     if @story.save
       redirect_to stories_path
@@ -24,6 +24,9 @@ class StoriesController < ApplicationController
 
   def destroy
     @story = Story.find(params[:id])
+    @story.sentences.each do |sentence|
+      sentence.destroy
+    end
     @story.destroy
     redirect_to stories_path
   end

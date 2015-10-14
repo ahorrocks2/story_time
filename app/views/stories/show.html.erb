@@ -1,7 +1,11 @@
 <h1><%= @story.title %></h1>
 <p><%= @story.author %>
 <p><%= @story.first_sentence %></p>
+<% @story.sentences.each do |sentence| %>
+  <p><%= sentence.text %></p>
+<% end %>
 
+<%= link_to "Add the next sentence!", new_story_sentence_path(@story), class: "btn btn-primary" %>
 
 <hr>
 <%= link_to "Home", stories_path, class: "btn btn-primary" %>

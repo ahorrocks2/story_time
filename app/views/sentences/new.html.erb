@@ -1,0 +1,17 @@
+<h1>Add a sentence</h1>
+
+<div class="row">
+<%= image_tag ("#{@image.url}"), height: "300" %>
+</div>
+
+<div class="row">
+
+<%= @story.first_sentence %>
+<% @story.sentences.each do |sentence| %>
+  <%= sentence.text %>
+<% end %>
+
+</div>
+
+
+<%= render 'form' %>
