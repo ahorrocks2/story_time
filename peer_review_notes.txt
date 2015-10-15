@@ -1,0 +1,18 @@
+notes:
+
+Your Gemfile is laid out in a unique manner.
+
+We had trouble getting the Gemfile to load properly. We deleted capybara-console from the Gemfile.lock and it worked.
+We don't know why this happened and you're likely not to blame.
+
+The homepage doesn't route to the main stories page, This could be fixed with: root :to => 'stories#index'
+
+Rspec failed, 7 of 12 fail. We were able to get them to pass, here's the breakdown:
+
+1. There were typos within the new story form and spec that confused Capy
+2. The callbacks within the models Story and Sentence were changed from before_validation to before_save
+
+
+Thanks all! Thanks for letting us look at your project, we love you.
+
+A&A
