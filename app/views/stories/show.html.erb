@@ -1,3 +1,9 @@
+<% content_for(:link) do %>
+
+  <li role="presentation" class="delete"><%= link_to "Delete #{@story.title}", story_path(@story), :method => "delete" %></li>
+
+<% end %>
+
 <h1 class="main_head"><%= @story.title %></h1>
 <p><%= @story.author %>
 <p><%= @story.first_sentence %></p>
@@ -6,9 +12,6 @@
 <% end %>
 
 <%= link_to "Add the next sentence!", new_story_sentence_path(@story), class: "btn btn-warning" %>
-<%= link_to "Delete #{@story.title}", story_path(@story), :method => "delete", class: "btn btn-danger" %>
-
-<hr>
 
 <ul style="list-style: none">
   <li><h5>Contributors</h5></li>

@@ -20,6 +20,10 @@ body {
   }
 }
 
+a.glyphicon.glyphicon-heart-empty {
+  color: #F45866;
+}
+
 .navbar {
   background: rgba(232,182,46,0.8);
   border-width: 100px;
@@ -30,22 +34,21 @@ body {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-left: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   min-height: 100px;
-  padding-top: 1%;
-  font-family: 'Times New Roman', serif;
-  font-style: italic;
-  font-size: 40px;
+  padding-top: 1.5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
 
   .navbar-nav > li > a {
   color: #2A5C3F;
   }
+
+  .navbar-nav > li.delete > a {
+  color: #B0413E;
+  }
 }
 
-// .navbar-fixed-bottom.eraser {
-//   width: 50px;
-//   background-color: pink;
-// }
 .container {
   text-align: center;
   .row {
@@ -57,12 +60,6 @@ body {
   .form-horizontal.center {
     width: 50%;
     margin: auto;
-  }
-
-  .new-sentence {
-    background: rgba(255,255,255,0.5);
-    padding: 5%;
-    border-radius: 5px;
   }
 
   .form-container {
