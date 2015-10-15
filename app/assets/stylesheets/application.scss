@@ -1,6 +1,28 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+body {
+  background: url("http://motivationandsuccess.com/wp-content/uploads/sites/4/2015/05/textures-notebook-paper-wallpapers-backgrounds-for-powerpoint.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 25%;
+  font-family: 'Sanchez', serif;
+  font-size: 2em;
+
+  a {
+    color: rgba(79,85,94,1);
+  }
+  a:hover {
+    color: rgba(0,160,232,1);
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  background: rgba(232,182,46,0.8);
+}
 .container {
   text-align: center;
   .row {
@@ -9,4 +31,24 @@
   img {
     border-radius: 10px;
   }
+  .form-horizontal.center {
+    width: 50%;
+    margin: auto;
+  }
+
+  .new-sentence {
+    background: rgba(255,255,255,0.5);
+    padding: 5%;
+    border-radius: 5px;
+  }
+
+  .form-container {
+    margin: auto;
+  }
+
+  .main_head {
+    font-family: 'Calligraffitti', cursive;
+    font-size: 5em;
+  }
+
 }
