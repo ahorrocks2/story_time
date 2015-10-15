@@ -6,6 +6,7 @@ class SentencesController < ApplicationController
   end
 
   def create
+    @image = Image.order("RANDOM()").first
     @story = Story.find(params[:story_id])
     @sentence = @story.sentences.new(sentence_params)
     if @sentence.save

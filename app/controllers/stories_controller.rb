@@ -14,6 +14,7 @@ class StoriesController < ApplicationController
   end
 
   def create
+    @image = Image.order("RANDOM()").first
     @story = Story.create(story_params)
     if @story.save
       redirect_to stories_path
