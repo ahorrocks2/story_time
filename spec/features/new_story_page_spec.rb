@@ -6,8 +6,8 @@ describe 'the add a story path' do
     click_on 'Add a Story'
     fill_in 'Title', :with => 'A Pretty Pretty Princess'
     fill_in 'Author', :with => 'Alisa'
-    fill_in 'First sentence', :with => 'There once was a princess.'
-    click_on 'Create Story'
+    fill_in 'First Sentence', :with => 'There once was a princess, who wrote a longer sentence.'
+    click_on 'Submit'
     expect(page).to have_content 'A Pretty Pretty Princess'
   end
 
@@ -16,8 +16,8 @@ describe 'the add a story path' do
     click_on 'Add a Story'
     fill_in 'Title', :with => ''
     fill_in 'Author', :with => ''
-    fill_in 'First sentence', :with => ''
-    click_on 'Create Story'
+    fill_in 'First Sentence', :with => ''
+    click_on 'Submit'
     expect(page).to have_content 'errors'
   end
 
