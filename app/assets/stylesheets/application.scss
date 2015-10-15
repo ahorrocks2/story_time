@@ -22,7 +22,30 @@ body {
 
 .navbar {
   background: rgba(232,182,46,0.8);
+  border-width: 100px;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-color: pink;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  min-height: 100px;
+  padding-top: 1%;
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 40px;
+
+  .navbar-nav > li > a {
+  color: #2A5C3F;
+  }
 }
+
+// .navbar-fixed-bottom.eraser {
+//   width: 50px;
+//   background-color: pink;
+// }
 .container {
   text-align: center;
   .row {
@@ -51,4 +74,15 @@ body {
     font-size: 5em;
   }
 
+}
+
+.red-line {
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: red;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  margin-left: 6%;
+  min-height: 2000px;
 }

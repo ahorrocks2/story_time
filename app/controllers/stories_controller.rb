@@ -23,6 +23,16 @@ class StoriesController < ApplicationController
     end
   end
 
+  def update
+    @story = Story.find(params[:id])
+
+    if params[:favorite] == 'like'
+      @story.favorites += 1
+      @story.save
+      redirect_to stories_path
+    end
+  end
+
   def destroy
     @story = Story.find(params[:id])
     @story.sentences.each do |sentence|

@@ -15,5 +15,13 @@ images = Image.create([
   {url:"http://delfossewine.com/images/cabin21s.JPG"},
   {url:"https://s-media-cache-ak0.pinimg.com/originals/a5/d2/22/a5d222d69012a5e5ae3d52a488869823.jpg"},
   {url:"http://media.giphy.com/media/kAzybbAzjrTI4/giphy-facebook_s.jpg"},
-
-  ])
+  {url:"http://www.goursac.com/_Media/entrance-to-maze-2_med.jpeg"},
+  {url: "http://archives.starbulletin.com/2005/06/14/features/art1c.jpg"},
+  {url: "https://c1.staticflickr.com/3/2637/3842644119_467f2c064a.jpg"},
+  {url: "http://cdn4.thr.com/sites/default/files/imagecache/scale_crop_768_433/2012/04/dawson_crying.jpg"},
+  {url: "https://thenypost.files.wordpress.com/2013/12/dont-trust-the-b.jpg"},
+  {url: "https://www.haskell.org/happy/Happy.gif"},
+  {url: "http://www.bradwarthen.com/wp-content/uploads/2014/04/Brad-Pitt-fight-club-body2.jpg"},
+  {url: "http://i2.cdn.turner.com/cnn/dam/assets/140922202605-08-pulp-fiction-story-top.jpg"},
+  {url: "http://www.fodors.com/trip-ideas/road-trips/pic.jpg"}
+])

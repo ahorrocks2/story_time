@@ -8,5 +8,6 @@
 
 <% @stories.each do |story| %>
   <h3><%= link_to "#{story.title}", story_path(story) %></h3>
-  <p><%= story.first_sentence %></p>
+  <p><%= link_to '', story_path(story, :favorite => "like"), :method => "patch", class: "glyphicon glyphicon-heart-empty" %></span> <%= story.first_sentence %></p>
+  <small><%= story.favorites %> Favorites</small>
 <% end %>
