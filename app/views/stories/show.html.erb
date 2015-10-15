@@ -10,3 +10,13 @@
 <hr>
 <%= link_to "Home", stories_path, class: "btn btn-primary" %>
 <%= link_to "Delete", story_path(@story), :method => "delete", class: "btn btn-primary" %>
+
+<hr>
+
+<ul style="list-style: none">
+  <li><h5>Contributors</h5></li>
+  <li><%= @story.author %>
+  <% @story.sentences.each do |sentence| %>
+    <li><%= sentence.author %></li>
+  <% end %>
+</ul>
