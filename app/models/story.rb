@@ -1,8 +1,8 @@
 class Story < ActiveRecord::Base
   validates :title, :author, :first_sentence, presence: true
   validates :first_sentence, length: {minimum: 30, maximum: 200}
-  before_validation(:title_case)
-  before_validation(:author_title_case)
+  before_save(:title_case)
+  before_save(:author_title_case)
   has_many :sentences
 
   private
